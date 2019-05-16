@@ -1,0 +1,11 @@
+node_modules
+client/dist
+server/lib
+**/*/ENV_VAR
+ENV_VAR
+**/env/development.js
+development.js
+package-lock.json
+package.json
+README.md
+Procfile
