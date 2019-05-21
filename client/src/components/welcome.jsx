@@ -18,14 +18,11 @@ class Welcome extends Component {
           <Fragment>
 
             <h1>
-                Hello Woyrld!;
+                Hello World
                 
             </h1>
 
-            <form action="api/profile/uploadfile" enctype="multipart/form-data" method="POST"> 
-   <input type="file" name="myFile" />
-   <input type="submit" value="Upload a file"/>
-</form>
+            
 
             
 
