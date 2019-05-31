@@ -72,8 +72,6 @@ class Welcome extends Component {
         console.log(this.responseText)
         console.log(this.responseType)
         console.log(this.responseXML)
-        console.log(this.getAllResponseHeaders)
-
 
     }
     if (this.readyState === XMLHttpRequest.DONE && this.status ===! 200) {
