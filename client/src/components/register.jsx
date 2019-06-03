@@ -31,8 +31,17 @@ handleFirstName(value) {
     this.setState({ last_name: value });
   }
 
-  handleProfilePictureLink(value) {
-    this.setState({ profile_picture_link: value });
+  async handleProfilePictureLink(event) {
+    try {
+      let profile_picture_link = this.state.profile_picture_link;
+       this.setState({ profile_picture_link: event.target.files[0].name });
+      profile_picture_link.split(' ').join('_');
+      console.log(this.state.profile_picture_link);
+    }  catch(e) {
+console.log(e);
+    }
+   
+    
   }
 
 handleSubmit(event) {
@@ -122,6 +131,9 @@ handleSubmit(event) {
               name="last_name"
             />
           </div>
+
+          <input type="file" 
+          onChange={e => this.handleProfilePictureLink(e)}></input>
 
           
 
