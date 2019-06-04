@@ -27,7 +27,7 @@ class Navigation extends Component {
             <Router>
                 <Fragment>
                     <Switch>
-                        <Route exact path="/" component={Welcome} />
+                        <Route exact path="/" component={Login} />
                         <Route exact path="/home" component={Welcome} />
                         <Route exact path="/contact" component={Contact} />
                         <Route exact path="/login2" component={LoginScreen} />

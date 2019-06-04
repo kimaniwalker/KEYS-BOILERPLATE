@@ -27,15 +27,15 @@ router.use('/classes', classesRouter);
 router.use('/profile', profileRouter);
 
 
-/* router.route('*')
+router.route('*')
     .post(tokenMiddleware, isLoggedIn)
     .put(tokenMiddleware, isLoggedIn)
-    .delete(tokenMiddleware, isLoggedIn); */
+    .delete(tokenMiddleware, isLoggedIn);
 
 
 
-/* router.use(tokenMiddleware);
-router.use(isLoggedIn); */
+router.use(tokenMiddleware);
+router.use(isLoggedIn);
 
 
 
